@@ -11177,7 +11177,9 @@ footer p {
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem;
 }
-
+.sidebar-heading img {
+  width: 30%;
+}
 .page-dashboard #sidebar-wrapper .list-group {
   width: 15rem;
 }
