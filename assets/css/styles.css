@@ -221,7 +221,9 @@ the website, in dark theme
   font-size: 1.15rem;
   color: var(--first-color);
 }
-
+.nav__logo img {
+  width: 18%;
+}
 .nav__logo:hover{
   color: var(--first-color);
 }
