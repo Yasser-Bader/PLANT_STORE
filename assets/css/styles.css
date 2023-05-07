@@ -503,7 +503,14 @@ the website, in dark theme
   display: grid;
   position: relative;
 }
-
+.unavailable img{
+  display: grid;
+  position: relative;
+  opacity: .5;
+}
+.unavailable img:hover{
+  opacity: .9;
+}
 .product__img{
   position: relative;
   width: 120px;
@@ -522,7 +529,9 @@ the website, in dark theme
 .product__title{
   margin-bottom: .25rem;
 }
-
+.title{
+  color: red;
+}
 .product__button{
   position: absolute;
   right: 0;
@@ -1063,4 +1072,37 @@ the website, in dark theme
   .scrollup{
     right: 3rem;
   }
+}
+
+.media-body .stars{
+  color:rgb(1, 114, 39);
+  font-size: 13px;
+}
+.containerstart {
+  display: flex;
+  align-items: center;
+}
+
+.containerstart span {
+  color:rgb(1, 114, 39);
+  opacity: .4;
+  cursor: pointer;
+}
+
+/* ( STEP-2 ) => when we hover over the container, al the elements inside will change the opacity to 100% */
+.containerstart:hover span {
+  opacity: 1;
+}
+
+/* ( STEP-3 ) => ( ~ ) this sign selects all the siblings after that element. In this case when we hover over one of the span elements, the others after that element will have the opacity of 40% */
+.containerstart span:hover ~ span {
+  opacity: .4;
+}
+
+/* this is a cool trick, but if you're a beginner it might be complicated for you.
+SO if you need any explanation on that, comment down below. I'll try to help you */
+
+/* we'll add this class of active with JS to the span elements */
+.containerstart span.active {
+  opacity: 1;
 }
